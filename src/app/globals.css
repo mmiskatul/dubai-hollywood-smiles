@@ -1,0 +1,138 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-pure: #ffffff;
+    --bg-subtle-1: #fcfcfc;
+    --bg-subtle-2: #fafafa;
+    --bg-subtle-3: #f8fafa;
+    --bg-subtle-4: #f5f7f7;
+
+    --text-primary: #171a1c;
+    --text-secondary: #5f666b;
+    --text-muted: #8a9297;
+
+    --brand-teal: #0f6b68;
+    --brand-teal-dark: #0b5250;
+    --brand-teal-light: #148581;
+    --brand-teal-subtle: rgba(15, 107, 104, 0.08);
+
+    --brand-mint: #eaf6f5;
+    --brand-mint-light: #f3faf9;
+
+    --border-subtle: #e9edee;
+    --border-light: #f0f3f4;
+  }
+
+  body {
+    background-color: #ffffff;
+    color: #171a1c;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: #eaf6f5;
+    color: #0f6b68;
+  }
+}
+
+/* Custom utilities */
+.bg-pure-white {
+  background-color: #ffffff;
+}
+
+.bg-subtle-1 {
+  background-color: #fcfcfc;
+}
+
+.bg-subtle-2 {
+  background-color: #fafafa;
+}
+
+.bg-subtle-3 {
+  background-color: #f8fafa;
+}
+
+.bg-subtle-4 {
+  background-color: #f5f7f7;
+}
+
+.bg-brand-mint {
+  background-color: #eaf6f5;
+}
+
+.bg-brand-mint-light {
+  background-color: #f3faf9;
+}
+
+.bg-brand-teal {
+  background-color: #0f6b68;
+}
+
+.bg-brand-teal:hover {
+  background-color: #0b5250;
+}
+
+.text-brand-primary {
+  color: #171a1c;
+}
+
+.text-brand-secondary {
+  color: #5f666b;
+}
+
+.text-brand-muted {
+  color: #8a9297;
+}
+
+.text-brand-teal {
+  color: #0f6b68;
+}
+
+.border-subtle {
+  border-color: #e9edee;
+}
+
+.border-brand-teal {
+  border-color: #0f6b68;
+}
+
+/* Subtle micro-shadows */
+.shadow-subtle {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03), 0 1px 2px rgba(0, 0, 0, 0.02);
+}
+
+.shadow-card {
+  box-shadow: 0 4px 20px -2px rgba(15, 107, 104, 0.03), 0 2px 6px -1px rgba(0, 0, 0, 0.02);
+}
+
+.shadow-card-hover {
+  box-shadow: 0 12px 30px -4px rgba(15, 107, 104, 0.06), 0 4px 12px -2px rgba(0, 0, 0, 0.03);
+}
+
+/* Smooth transitions */
+.transition-smooth {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e2e8e9;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #cfd7d8;
+}
